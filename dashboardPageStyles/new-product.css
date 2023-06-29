@@ -4,6 +4,13 @@
     background-image: url(../img/curved.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
     
 
+}
+.new-product-child{
+    position: absolute;
+    width: 95%;
+    bottom: -48px;
+    
 }
