@@ -380,18 +380,24 @@
     <div class="grid grid-cols-1 gap-4 mb-4  md:grid-cols-2 ">
       <div class=" flex  flex-col items-center justify-center rounded bg-white   rounded-lg shadow-lg">
         <div class="w-full p-4  ">
-          <h3 class="gray-400" >Daily Sales</h3>
+          <h3 class="gray-400" >Profit Rate</h3>
         </div>
-        <div class="mx-auto w-3/5 overflow-hidden">
+        <div class="mx-auto w-4/5 overflow-hidden">
           <canvas id="scatter-chart"></canvas>
         </div>
         <div class="w-full p-4 ">
           <button type="button" class=" text-white bg-blue-400  font-medium rounded-lg text-sm px-5 py-2.5 mb-2 ">Read more</button>
         </div>
       </div>
-      <div class="  flex items-center justify-center rounded bg-white   rounded-lg shadow-lg">
-        <div class="mx-auto w-3/5 overflow-hidden">
+      <div class="  flex flex-col items-center justify-center rounded bg-white   rounded-lg shadow-lg">
+        <div class="w-full p-4 ">
+          <h3 class="gray-400">Monthly Sales</h3>
+        </div>
+        <div class="mx-auto w-4/5 overflow-hidden">
           <canvas id="bar-chart-custom-options"></canvas>
+        </div>
+        <div class="w-full p-4 ">
+          <button type="button" class=" text-white bg-purple-400  font-medium rounded-lg text-sm px-5 py-2.5 mb-2 ">Read more</button>
         </div>
       </div>
     </div>
