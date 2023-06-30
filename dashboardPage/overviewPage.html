@@ -33,9 +33,7 @@
     <nav class="border-gray-200 px-4 lg:px-6 py-2.5 ">
       <div class="flex flex-wrap justify-between items-center">
         <div class="flex justify-start items-center">
-
-          
-          <a href="#" class="flex mr-4 ">
+         <a href="#" class="flex mr-4 ">
             <img class="w-20 bg-gray-100" src="../img/download2.png" class="ml-6 h-8" alt="FlowBite Logo" />
             <span class="self-center text-2xl font-semibold whitespace-nowrap text-gray-600"> BAGGY</span>
           </a>
@@ -352,23 +350,43 @@
   </header>
 
   <div class="p-4  border-dashed rounded-lg">
-    <div class="grid grid-cols-2 gap-4 mb-4 sm-">
-      <div class="flex items-center justify-center rounded  bg-white  rounded-lg shadow-lg">
+    <div class="grid grid-cols-1  gap-4 mb-4 md:grid-cols-2">
+      <div class="flex  flex-col items-center justify-center rounded  bg-white  rounded-lg shadow-lg">
+        <div class="w-full p-4 ">
+          <h3 class="gray-400">Monthly Sales</h3>
+        </div>
         <div class="mx-auto w-3/5 overflow-hidden">
           <canvas id="polar-area-chart"></canvas>
         </div>
+        <div class="w-full p-4 ">
+          <button type="button" class=" text-white bg-purple-400  font-medium rounded-lg text-sm px-5 py-2.5 mb-2 ">Read more</button>
+        </div>
+        
       </div>
-      <div class="flex items-center justify-center  rounded bg-white  rounded-lg shadow-lg">
-        <div class="mx-auto w-3/5 overflow-hidden">
+      <div class="flex  flex-col items-center  justify-center  rounded bg-white  rounded-lg shadow-lg">
+        <div class="w-full p-4  ">
+          <h3 class="gray-400" >Daily Sales</h3>
+        </div>
+        <div class="mx-auto w-4/5 overflow-hidden">
           <canvas id="line-chart"></canvas>
         </div>
+        <div class="w-full p-4 ">
+          <button type="button" class=" text-white bg-blue-500  font-medium rounded-lg text-sm px-5 py-2.5 mb-2 ">Read more</button>
+        </div>
       </div>
+
     </div>
 
-    <div class="grid grid-cols-2 gap-4 mb-4  sm:grid-cols-1 ">
-      <div class="  flex items-center justify-center rounded bg-white   rounded-lg shadow-lg">
+    <div class="grid grid-cols-1 gap-4 mb-4  md:grid-cols-2 ">
+      <div class=" flex  flex-col items-center justify-center rounded bg-white   rounded-lg shadow-lg">
+        <div class="w-full p-4  ">
+          <h3 class="gray-400" >Daily Sales</h3>
+        </div>
         <div class="mx-auto w-3/5 overflow-hidden">
           <canvas id="scatter-chart"></canvas>
+        </div>
+        <div class="w-full p-4 ">
+          <button type="button" class=" text-white bg-blue-300  font-medium rounded-lg text-sm px-5 py-2.5 mb-2 ">Read more</button>
         </div>
       </div>
       <div class="  flex items-center justify-center rounded bg-white   rounded-lg shadow-lg">
@@ -377,7 +395,10 @@
         </div>
       </div>
     </div>
-    <div class="flex items-center justify-center  mb-4 rounded bg-white  rounded-lg shadow-lg">
+    <div class="flex flex-col items-center justify-center  mb-4 rounded bg-white  rounded-lg shadow-lg">
+      <div class="w-full p-4  ">
+        <h3 class="gray-400">Top selling Products</h3>
+      </div>
       <div class="flex flex-col w-11/12">
         <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
           <div class="inline-block w-full py-2 sm:px-6 lg:px-8">
@@ -385,54 +406,54 @@
               <table class="w-full text-center text-sm font-light">
                 <thead class="border-b font-medium dark:border-neutral-500">
                   <tr>
-                    <th scope="col" class="px-6 py-4">Class</th>
-                    <th scope="col" class="px-6 py-4">Heading</th>
-                    <th scope="col" class="px-6 py-4">Heading</th>
+                    <th scope="col" class="px-6 py-4">Name</th>
+                    <th scope="col" class="px-6 py-4">Price</th>
+                    <th scope="col" class="px-6 py-4">Number</th>
                   </tr>
                 </thead>
                 <tbody>
 
                   <tr class="border-b border-primary-200 bg-primary-100 text-neutral-800">
                     <td class="whitespace-nowrap px-6 py-4 font-medium">
-                      Primary
+                      TAILORED 
                     </td>
-                    <td class="whitespace-nowrap px-6 py-4">Cell</td>
-                    <td class="whitespace-nowrap px-6 py-4">Cell</td>
+                    <td class="whitespace-nowrap px-6 py-4">33$</td>
+                    <td class="whitespace-nowrap px-6 py-4">48975</td>
                   </tr>
                   <tr class="border-b border-secondary-200 bg-secondary-100 text-neutral-800">
                     <td class="whitespace-nowrap px-6 py-4 font-medium">
-                      Secondary
+                      LINEN 
                     </td>
-                    <td class="whitespace-nowrap px-6 py-4">Cell</td>
-                    <td class="whitespace-nowrap px-6 py-4">Cell</td>
+                    <td class="whitespace-nowrap px-6 py-4">15$</td>
+                    <td class="whitespace-nowrap px-6 py-4">36547</td>
                   </tr>
                   <tr class="border-b border-success-200 bg-success-100 text-neutral-800">
                     <td class="whitespace-nowrap px-6 py-4 font-medium">
-                      Success
+                      PRINTED 
                     </td>
-                    <td class="whitespace-nowrap px-6 py-4">Cell</td>
-                    <td class="whitespace-nowrap px-6 py-4">Cell</td>
+                    <td class="whitespace-nowrap px-6 py-4">18$</td>
+                    <td class="whitespace-nowrap px-6 py-4">95242</td>
                   </tr>
                   <tr class="border-b border-danger-200 bg-danger-100 text-neutral-800">
                     <td class="whitespace-nowrap px-6 py-4 font-medium">
-                      Danger
+                      ASYMMETRIC
                     </td>
-                    <td class="whitespace-nowrap px-6 py-4">Cell</td>
-                    <td class="whitespace-nowrap px-6 py-4">Cell</td>
+                    <td class="whitespace-nowrap px-6 py-4">22$</td>
+                    <td class="whitespace-nowrap px-6 py-4">68956</td>
                   </tr>
                   <tr class="border-b border-warning-200 bg-warning-100 text-neutral-800">
                     <td class="whitespace-nowrap px-6 py-4 font-medium">
-                      Warning
+                      SHORT 
                     </td>
-                    <td class="whitespace-nowrap px-6 py-4">Cell</td>
-                    <td class="whitespace-nowrap px-6 py-4">Cell</td>
+                    <td class="whitespace-nowrap px-6 py-4">31$</td>
+                    <td class="whitespace-nowrap px-6 py-4">23541</td>
                   </tr>
                   <tr class="border-b border-info-200 bg-info-100 text-neutral-800">
                     <td class="whitespace-nowrap px-6 py-4 font-medium">
-                      Info
+                      LINEN 
                     </td>
-                    <td class="whitespace-nowrap px-6 py-4">Cell</td>
-                    <td class="whitespace-nowrap px-6 py-4">Cell</td>
+                    <td class="whitespace-nowrap px-6 py-4">25$</td>
+                    <td class="whitespace-nowrap px-6 py-4">32564</td>
                   </tr>
 
                 </tbody>
@@ -440,6 +461,9 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="w-full p-4 ">
+        <button type="button" class=" text-white bg-blue-300  font-medium rounded-lg text-sm px-5 py-2.5 mb-2 ">Read more</button>
       </div>
     </div>
 
