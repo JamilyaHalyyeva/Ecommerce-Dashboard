@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ibrahim/Jamilya">
+  <meta name="description" content="some text">
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../dashboardPageStyles/EditProduct.css">
+  <title>Edit Product</title>
+</head>
+<body>
+<header>
+  <div class="left-header">
+    <h1 class="text-2xl mb-10">Category: Furniture</h1>
+    <h3>Product ID: #57412</h3>
+    <h5>Serial No.: 71283476591</h5>
+  </div>
+  <div class="right-header">
+    <div class="relative flex flex-wrap items-stretch w-1/4 mr-8 transition-all rounded-lg ease-soft">
+      <span class="text-sm ease-soft leading-5.6 absolute z-50 -ml-px flex h-full items-center whitespace-nowrap rounded-lg rounded-tr-none rounded-br-none border border-r-0 border-transparent bg-transparent py-2 px-2.5 text-center font-normal text-slate-500 transition-all">
+      <i class="fas fa-search" aria-hidden="true"></i>
+      </span>
+      <input type="text" class="pl-9 text-sm focus:shadow-soft-primary-outline  ease-soft w-1/100 leading-5.6 relative -ml-px block min-w-0 flex-auto rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none focus:transition-shadow" placeholder="Type here...">
+      </div>
+  </div>
+</header>
+<main>
+  <div class="upper-container">
+
+  <section class="product-image">
+    <div class="pi-top">
+      <h1 class="text-blue-950 font-extrabold	">Product Image</h1>
+    </div>
+    <div class="pi-middle"></div>
+    <div class="pi-bottom">
+      <button class="edit bg-gradient-to-r from-sky-400 to-fuchsia-500 font-bold">EDIT</button>
+      <button class="remove bg-gradient-to-r from-orange-500 to-amber-300 font-bold">REMOVE</button>
+    </div>
+  </section>
+  <section class="product-information">
+    <div class="form-container">
+      <h5 class="text-2xl text-blue-950 font-extrabold mb-8">Product Information</h5>
+      <div class="name-weight">
+      <div class="form-row">
+        <label for="ProductName">Name</label>
+        <input type="text" id="ProductName" name="ProductName" value="Minimal Bar Stool" placeholder="Enter product name">
+      </div>
+      <div class="form-row">
+        <label for="Weight">Weight</label>
+        <input type="number" id="Weight" name="Weight" value="2" placeholder="Enter weight">
+      </div>
+    </div>
+    <div class="collection-price">
+      <div class="form-row">
+        <label for="Collection">Collection</label>
+        <input type="text" id="Collection" name="Collection" value="Summer" placeholder="Enter collection">
+      </div>
+      <div class="form-row">
+        <label for="Price">Price</label>
+        <input type="text" id="Price" name="Price" value="$90" placeholder="Enter price">
+      </div>
+    </div>
+    <div class="quantity-category">
+      <div class="form-row">
+        <label for="Quantity">Quantity</label>
+        <input type="number" id="Quantity" name="Quantity" value="50" placeholder="Enter quantity">
+      </div>
+      
+      <div class="form-row">
+        <label for="Category">Category</label>
+        <div class="select-container">
+          <select id="Category" name="Category">
+            <option value="option1">Furniture</option>
+            <option value="option2">Clothing</option>
+            <option value="option3">Electronics</option>
+          </select>
+        </div>
+      </div>
+    </div>
+      <div class="form-row">
+        <label for="Description">Description <small>(optional)</small></label>
+        <textarea id="Description" name="Description" placeholder="Enter description"></textarea>
+      </div>
+    </div>
+  </section>
+</div>
+  <div class="lower-container">
+  <section class="socials">
+    <div class="socials-top">
+      <h1 class="text-blue-950 font-extrabold">Socials</h1>
+    </div>
+    <div class="socials-bottom">
+      <div>
+        <label class="text-blue-950 font-extrabold" for="email">Shopify Handle</label><br/>
+        <input id="email" type="email" placeholder="@soft">
+      </div>
+      <div>
+        <label class="text-blue-950 font-extrabold" for="link">Facebook Account</label><br/>
+        <input id="link" type="link" placeholder="https://">
+      </div>
+      <div>
+        <label class="text-blue-950 font-extrabold" for="link">Instagram Account</label><br/>
+        <input id="link" type="link" placeholder="https://">
+      </div>
+    </div>
+  </section>
+  <section class="pricing">
+    <div class="form-container">
+      <h5 class="text-2xl text-blue-950 font-extrabold mb-8">Pricing</h5>
+<div class="pcs">
+
+
+      <div class="form-row">
+        <label for="Weight">Price</label>
+        <input type="number" id="Weight" name="Weight" value="99.00" placeholder="Enter weight">
+      </div>
+     
+      <div class="form-row">
+        <label for="Category">Currency</label>
+        <div class="select-container">
+          <select id="Category" name="Category">
+            <option value="option1">EUR</option>
+            <option value="option2">USD</option>
+            <option value="option3">CAD</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <label for="ProductName">SKU</label>
+        <input type="text" id="ProductName" name="ProductName" value="71283476591" placeholder="Enter product name">
+      </div>
+    </div>
+    </div>
+
+  </section>
+
+</div>
+<div class="submit-container">
+  <div class="form-row">
+    <button type="button" class="inline-block px-8 py-3 mt-2 mb-0 mr-auto font-bold text-center text-white uppercase align-middle transition-all border-0 rounded-lg cursor-pointer lg:ml-auto lg:mr-0 lg:mt-0 hover:scale-102 active:opacity-85 hover:shadow-soft-xs bg-gradient-to-tl from-purple-700 to-pink-500 leading-pro text-xs ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25 h-10 w-28">Save</button>
+  </div>
+</div>
+</main>
+<footer>
+  <div class="footer-top">
+    <a href="">Company</a>
+    <a href="">About Us</a>
+    <a href="">Team</a>
+    <a href="">Products</a>
+    <a href="">Blog</a>
+    <a href="">Pricing</a>
+  </div>
+  <div class="footer-middle">
+    <i class="fa-brands fa-twitter" style="color: #828282;"></i>
+    <i class="fa-brands fa-twitch" style="color: #828282;"></i>
+    <i class="fa-brands fa-linkedin-in" style="color: #828282;"></i>
+    <i class="fa-brands fa-github" style="color: #828282;"></i>
+    <i class="fa-brands fa-youtube" style="color: #828282;"></i>
+  </div>
+  <div class="footer-bottom">
+    <h1>Copyright © 2023 Soft by Creative Tim.</h1>
+  </div>
+</footer>
+</body>
+</html>
