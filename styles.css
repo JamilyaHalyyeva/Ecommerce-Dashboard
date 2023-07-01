@@ -57,6 +57,9 @@ main {
   flex-direction: column;
   align-items: center;
 }
+.login-middle input {
+  padding-left: 1rem;
+}
 .login {
   margin-top: 2rem;
   font-size: 1.2rem;
