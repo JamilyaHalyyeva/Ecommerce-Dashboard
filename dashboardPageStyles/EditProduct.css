@@ -24,6 +24,8 @@ header {
   padding-top: 1rem;
   padding-left: 1rem;
   background-image: url(../img/curved.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
   opacity: 0.8;
   border-radius: 8px;
 }
