@@ -23,11 +23,13 @@ header {
   margin-top: 1rem;
   padding-top: 1rem;
   padding-left: 1rem;
-  background-color: #101D32;
+  background-image: url(../img/curved.jpeg);
+  opacity: 0.8;
   border-radius: 8px;
 }
 .left-header {
-  color: white;
+  color:white;
+  font-weight: bold;
   width: 50%;
 }
 .right-header {
